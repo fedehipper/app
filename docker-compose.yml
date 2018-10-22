@@ -9,8 +9,8 @@ services:
       - db:database
     environment:
       - server.port=8090
-      - spring.datasource.url=jdbc:postgresql://data-pg:5432/postgres
-      - spring.datasource.username=postgres
+      - spring.datasource.url=jdbc:postgresql://data-pg:5432/personas-db
+      - spring.datasource.username=personas
       - spring.datasource.password=123456
   db:
     container_name: data-pg
@@ -19,5 +19,5 @@ services:
       - "5433:5432"
     environment:
       - POSTGRES_PASSWORD=123456
-      - POSTGRES_USER=postgres
-      - POSTGRES_DB=postgres
+      - POSTGRES_USER=personas
+      - POSTGRES_DB=personas-db

@@ -14,7 +14,7 @@ services:
   db:
     container_name: data-pg
     image: postgres:latest
-    ports: ["5433:####"]
+    ports: ["5433:5432"]
     environment:
       - POSTGRES_PASSWORD=123456
       - POSTGRES_USER=personas

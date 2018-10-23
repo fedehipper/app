@@ -3,19 +3,20 @@ services:
   web-personas:
     container_name: personas
     build: .
-    ports: ["15000:8080"]
+    ports: ["####:####"]
     links:
       - db
     environment:
-      - server.port=8080
-      - spring.datasource.url=jdbc:postgresql://data-pg:5432/personas-db
+      - server.port=####
+      - spring.datasource.url=jdbc:postgresql://####:####/personas-db
       - spring.datasource.username=personas
       - spring.datasource.password=123456
   db:
     container_name: data-pg
     image: postgres:latest
-    ports: ["5433:5432"]
+    ports: ["5433:####"]
     environment:
       - POSTGRES_PASSWORD=123456
       - POSTGRES_USER=personas
-      - POSTGRES_DB=personas-db
+      - POSTGRES_DB=personas-dbo
+

@@ -18,5 +18,5 @@ services:
     environment:
       - POSTGRES_PASSWORD=123456
       - POSTGRES_USER=personas
-      - POSTGRES_DB=personas-dbo
+      - POSTGRES_DB=personas-db
 

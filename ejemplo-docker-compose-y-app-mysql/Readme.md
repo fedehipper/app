@@ -1,6 +1,6 @@
 Para correr el docker-compose up
 
-tener la estructura siguiente en un directorio que se encuentran en /doc
+tener la estructura siguiente (lo necesario se encuantra en /doc)
 
 - el archivo docker-compose
 - el Dockerfile

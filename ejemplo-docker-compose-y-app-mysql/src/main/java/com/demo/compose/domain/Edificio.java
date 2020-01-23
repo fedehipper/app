@@ -3,6 +3,7 @@ package com.demo.compose.domain;
 import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 
 @Entity
@@ -13,6 +14,7 @@ public class Edificio {
     private String nombre;
 
     @OneToMany
+    @JoinColumn(name = "edificio_id")
     private List<Departamento> departamentos;
 
     public Long getId() {
